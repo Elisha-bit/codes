@@ -1,43 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="welcome">
-      <h1 class="heading">Rock Paper Scissors</h1>
-      <button class="start" id="start">Start</button>
-      <button class="reset" id="reset">Reset</button>
+</head>
+<body>
+    <div id="gameDiv">
+     <h1 class="gameText" id="playerText">Player</h1>
+     <h1 class="gameText" id="computerText">Computer</h1>
+     <h1 class="gameText" id="resultText">Result</h1>
+
+     <button class="choiceBtn">ROCK<button>
+     <button class="choiceBtn">PAPER<button>
+     <button class="choiceBtn">SCISSORS<button>
     </div>
-    <div class="center">
-      <div class="container">
-        <div class="player-choices">
-          <div class="Scores">
-            <p class="player">
-              Computer Score: <span id="computerScore">0</span>
-            </p>
-            <p class="player">Player Score: <span id="playerScore">0</span></p>
-          </div>
-          <div class="gameData">
-            <p class="total">Total Scores: <span id="total"> 0</span> </p>
-            <p class="round">Round: <span id="round">1</span></p>
-          </div>
-        </div>
-        <div class="resultDeclaration">
-          <P class="rps">Rock</P>
-          <p id="resultText">Player wins</p>
-          <p id="resultComparison">3 : 2</p>
-        </div>
-        <div class="buttons" id="button">
-          <button class="choice" id="rock">Rock</button>
-          <button class="choice" id="paper">Paper</button>
-          <button class="choice" id="scissors">Scissors</button>
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+    <script src="java.js"></script>
+</body>
 </html>
