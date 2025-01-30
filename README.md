@@ -1,1 +1,2 @@
-# Tic-Tac-Toe
+# Rock-Paper-Scissors
+The odin project Rock Papper Scissors

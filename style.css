@@ -1,35 +1,128 @@
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    width: 100%;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
     height: 100vh;
+    position: relative;
+}
+
+.center{
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    height: 85vh;
 }
-
 .container{
-    width: 400px;
-    height: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.welcome{
+    font-size: 24px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: 15vh;
+
 }
 
-.board{
-    width: calc(400px /3);
-    height: calc(400px /3);
+
+
+.start,.reset{
+    position: absolute;
+    background: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: all 0.3s;
+    top: 60px;
 }
 
-.main{
-    font-size: 30px;
-    color: blue;
-    text-align: center;
-    margin-bottom: 490px;
-    margin-left: 60px;
-    padding-left: 60px ;
-} 
+.start:hover,.reset:hover{
+    background: #c00;
+}
+.reset{
+    display: none;
+}
 
+.player-choices{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.Scores{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gameData{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resultDeclaration{
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: 15vh;
+}
+
+.rps{
+    font-style: italic;
+    font-weight: 900;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    left: 0px;
+}
+
+.choice{
+    width: 90px;
+    height: 90px;
+    border-radius: 16px;
+    background: #c42914;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 40px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.choice:hover{
+    background: #a41a0f;
+}

@@ -1,30 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main">
-      <h1>Tic tac toe</h1>
+    <div class="welcome">
+      <h1 class="heading">Rock Paper Scissors</h1>
+      <button class="start" id="start">Start</button>
+      <button class="reset" id="reset">Reset</button>
     </div>
-    <div class="container">
-      <button class="board" value="1"></button>
-      <button class="board" value="2"></button>
-      <button class="board" value="3"></button>
-      <button class="board" value="4"></button>
-      <button class="board" value="5"></button>
-      <button class="board" value="6"></button>
-      <button class="board" value="7"></button>
-      <button class="board" value="8"></button>
-      <button class="board" value="9"></button>
+    <div class="center">
+      <div class="container">
+        <div class="player-choices">
+          <div class="Scores">
+            <p class="player">
+              Computer Score: <span id="computerScore">0</span>
+            </p>
+            <p class="player">Player Score: <span id="playerScore">0</span></p>
+          </div>
+          <div class="gameData">
+            <p class="total">Total Scores: <span id="total"> 0</span> </p>
+            <p class="round">Round: <span id="round">1</span></p>
+          </div>
+        </div>
+        <div class="resultDeclaration">
+          <P class="rps">Rock</P>
+          <p id="resultText">Player wins</p>
+          <p id="resultComparison">3 : 2</p>
+        </div>
+        <div class="buttons" id="button">
+          <button class="choice" id="rock">Rock</button>
+          <button class="choice" id="paper">Paper</button>
+          <button class="choice" id="scissors">Scissors</button>
+        </div>
+      </div>
     </div>
-    <h2 id="statustext"></h2>
-    <button id="restartbtn">Restart</button>
-    <script src="script.js" async defer></script>
+    <script src="script.js"></script>
   </body>
 </html>
